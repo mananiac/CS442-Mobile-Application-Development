@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/navy_blue"
+        android:background="@color/blue1"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:elevation="3dp"
+        android:id="@+id/title_of_the_official_layout"
+        />
+
+    <TextView
+        android:id="@+id/name_of_the_official_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/title_of_the_official_layout"
+        android:padding="5dp"
+        tools:ignore="TextContrastCheck"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:gravity="center_vertical|end"
+        android:layout_height="wrap_content"
+        android:background="@color/blue1"
+        android:elevation="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/separatorForReference"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_the_official_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

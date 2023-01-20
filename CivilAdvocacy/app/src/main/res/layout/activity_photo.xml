@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Photo"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="8dp"
+            android:text="Chicago, IL "
+            android:layout_height="wrap_content"
+            android:textColor="@color/pale_white"
+            android:id="@+id/topbar_of_the_official_layout"
+            android:textSize="16sp"
+            android:elevation="6dp"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="President"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/position_of_the_official_layout"
+            />
+        <TextView
+            android:text="Manan sagar"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/name_of_the_official_layout_"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+
+            <ImageView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/photo_of_the_official_layout"
+                tools:srcCompat="@tools:sample/avatars"
+                android:layout_marginBottom="45dp"/>
+
+            <ImageView
+                app:layout_constraintStart_toStartOf="@+id/photo_of_the_official_layout"
+                android:id="@+id/party_of_the_official_layout"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/dem_logo"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/photo_of_the_official_layout"
+                android:layout_width="90dp"
+                app:layout_constraintEnd_toEndOf="@+id/photo_of_the_official_layout"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

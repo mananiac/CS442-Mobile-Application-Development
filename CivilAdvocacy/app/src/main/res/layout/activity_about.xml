@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:alpha="0.9"
+    tools:context=".Activity_About"
+    android:background="@drawable/about"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/navy_blue"
+    android:backgroundTintMode="multiply"
+    android:layout_width="match_parent"
+    >
+
+    <TextView
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:text="@string/app_name"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:id="@+id/name_of_the_application"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:id="@+id/data_source"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textColor="@color/white"
+        android:text="@string/data_prov"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_the_application"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="69dp"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/googleCivicAPI"
+        android:textSize="37sp"
+        android:layout_marginEnd="57dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="297dp"
+        android:onClick="onClickAPI"
+        android:layout_height="wrap_content"
+        android:text="@string/api_text"
+        app:layout_constraintTop_toBottomOf="@+id/data_source"
+        android:textColor="@color/white"
+        android:layout_marginStart="57dp"/>
+
+    <TextView
+        android:text="@string/author"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="177dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:id="@+id/name_of_the_author"
+        android:layout_marginEnd="176dp"
+        app:layout_constraintHorizontal_bias="0.507"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleCivicAPI" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@+id/name_of_the_author"
+        android:textSize="18sp"
+        android:text="@string/version"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/name_of_the_author"
+        android:id="@+id/version_number"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_the_author"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
